@@ -52,7 +52,6 @@ button.onclick = function() {
 
                     let isLargerThanAsh = false;
                     isLargerThanAsh = (h > ASH_HEIGHT && w > ASH_WEIGHT);
-                    console.log(h + " " + w);
 
                     let name = n.charAt(0).toUpperCase() + n.slice(1);
 

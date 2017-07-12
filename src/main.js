@@ -1,8 +1,7 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 // ignore this line; omitting it causes TS errors
 exports = 0;
-const http = require("http");
+const http = require('http');
 let ASH_HEIGHT = 16.8; // 10cm units
 let ASH_WEIGHT = 430; // 100g units
 let field = document.getElementById("pokemon");
@@ -39,7 +38,6 @@ button.onclick = function () {
                     let n = result["name"];
                     let isLargerThanAsh = false;
                     isLargerThanAsh = (h > ASH_HEIGHT && w > ASH_WEIGHT);
-                    console.log(h + " " + w);
                     let name = n.charAt(0).toUpperCase() + n.slice(1);
                     display(name + " is " + ((isLargerThanAsh) ? "larger" : "not larger") + " than Ash!");
                 }
