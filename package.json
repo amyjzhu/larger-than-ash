@@ -1,0 +1,23 @@
+{
+  "name": "larger-than-ash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "npm i browserify -g",
+    "build": "tsc & browserify src/main.js > src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^6.0.81",
+    "node": "0.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^14.4.0"
+  }
+}
